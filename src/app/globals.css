@@ -5,7 +5,7 @@
 @layer base {
   :root {
     /* Enterprise surfaces */
-    --surface-page: 247 248 250; /* ~ #F7F8FA (soft neutral) */
+    --surface-page: 243 246 252; /* blue-grey neutral (premium, not white) */
     --surface-card: 255 255 255;
     --surface-ink: 24 24 27; /* zinc-900 */
     --surface-muted: 82 82 91; /* zinc-600 */
@@ -28,6 +28,11 @@
     font-size: 16px;
     line-height: 1.6;
     background-color: rgb(var(--surface-page));
+    /* Subtle premium surface gradient (keeps enterprise restraint) */
+    background-image:
+      radial-gradient(1200px 600px at 20% 0%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 60%),
+      radial-gradient(900px 500px at 90% 10%, rgba(30, 58, 138, 0.05) 0%, rgba(30, 58, 138, 0) 55%);
+    background-attachment: fixed;
     color: rgb(var(--surface-ink));
   }
 
