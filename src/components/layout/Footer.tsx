@@ -101,14 +101,6 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="mt-6">
-              <Link
-                href="/downloads/Clyros_Tech_Company_Profile.pdf"
-                className="inline-flex text-sm font-medium text-zinc-700 transition-colors hover:text-zinc-900"
-              >
-                Company Profile (PDF) →
-              </Link>
-            </div>
           </div>
         </div>
 

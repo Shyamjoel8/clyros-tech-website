@@ -334,14 +334,14 @@ export default function CapabilitiesPage() {
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-600">
               For a comprehensive overview of Clyros Tech&apos;s capabilities, experience, and approach,
-              download our company profile.
+              request our company profile document.
             </p>
             <div className="mt-6">
               <Link
-                href="/downloads/Clyros_Tech_Company_Profile.pdf"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-md border border-transparent bg-zinc-900 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-zinc-800"
               >
-                Download Company Profile (PDF)
+                Request Company Profile
               </Link>
             </div>
           </div>

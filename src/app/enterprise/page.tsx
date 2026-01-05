@@ -395,12 +395,12 @@ export default function EnterprisePage() {
                 differentiators.
               </p>
               <div className="mt-4">
-                <a
-                  href="/resources/Clyros_Tech_Company_Overview.pdf"
+                <Link
+                  href="/contact"
                   className="text-sm font-medium text-zinc-900 hover:text-zinc-700"
                 >
-                  Download PDF →
-                </a>
+                  Request Document →
+                </Link>
               </div>
             </div>
 
@@ -410,12 +410,12 @@ export default function EnterprisePage() {
                 Summary of delivery phases, quality gates, and governance approach.
               </p>
               <div className="mt-4">
-                <a
-                  href="/resources/Clyros_Tech_Delivery_Methodology.pdf"
+                <Link
+                  href="/contact"
                   className="text-sm font-medium text-zinc-900 hover:text-zinc-700"
                 >
-                  Download PDF →
-                </a>
+                  Request Document →
+                </Link>
               </div>
             </div>
 
@@ -425,12 +425,12 @@ export default function EnterprisePage() {
                 Overview of engagement types, commercial models, and typical timelines.
               </p>
               <div className="mt-4">
-                <a
-                  href="/resources/Clyros_Tech_Engagement_Models.pdf"
+                <Link
+                  href="/contact"
                   className="text-sm font-medium text-zinc-900 hover:text-zinc-700"
                 >
-                  Download PDF →
-                </a>
+                  Request Document →
+                </Link>
               </div>
             </div>
           </div>
