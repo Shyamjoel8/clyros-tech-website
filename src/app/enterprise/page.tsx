@@ -457,7 +457,7 @@ export default function EnterprisePage() {
             <div className="mt-6 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-zinc-900 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-zinc-800"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-[rgb(var(--accent))] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[rgb(var(--accent-hover))]"
               >
                 Contact Us
               </Link>

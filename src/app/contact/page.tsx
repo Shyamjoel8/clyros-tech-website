@@ -167,7 +167,7 @@ export default function ContactPage({
             <div className="pt-2">
               <button
                 type="submit"
-                className="inline-flex h-12 items-center justify-center rounded-md bg-zinc-900 px-6 text-sm font-semibold text-white hover:bg-zinc-800"
+                    className="inline-flex h-12 items-center justify-center rounded-md bg-[rgb(var(--accent))] px-6 text-sm font-semibold text-white hover:bg-[rgb(var(--accent-hover))]"
               >
                 Submit
               </button>

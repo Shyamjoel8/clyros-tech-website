@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Enterprise surfaces */
+    --surface-page: 244 245 247; /* ~ #F4F5F7 (soft neutral) */
+    --surface-card: 255 255 255;
+    --surface-ink: 24 24 27; /* zinc-900 */
+    --surface-muted: 82 82 91; /* zinc-600 */
+    --surface-border: 228 228 231; /* zinc-200 */
+
+    /* Single restrained accent (navy) */
+    --accent: 30 58 138; /* blue-900 */
+    --accent-hover: 30 64 175; /* blue-800 */
+  }
+
   html {
     font-feature-settings: "kern" 1, "liga" 1;
     text-rendering: optimizeLegibility;
@@ -14,6 +27,8 @@
     min-height: 100vh;
     font-size: 16px;
     line-height: 1.6;
+    background-color: rgb(var(--surface-page));
+    color: rgb(var(--surface-ink));
   }
 
   h1 {
@@ -38,8 +53,17 @@
     line-height: 1.7;
   }
 
+  /* Links: use accent in content areas without affecting nav/link button styling */
+  main a {
+    color: rgb(var(--accent));
+  }
+  main a:hover {
+    color: rgb(var(--accent-hover));
+  }
+
   *:focus-visible {
     outline-width: 2px;
     outline-offset: 2px;
+    outline-color: rgb(var(--accent));
   }
 }

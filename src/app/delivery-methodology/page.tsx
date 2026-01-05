@@ -92,7 +92,7 @@ export default function DeliveryMethodologyPage() {
           <div className="mt-10 space-y-6">
             <article className="rounded-lg border border-zinc-200 bg-white p-8">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-900 text-sm font-semibold text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[rgb(var(--accent))] text-sm font-semibold text-white">
                   1
                 </div>
                 <div className="flex-1">
@@ -123,7 +123,7 @@ export default function DeliveryMethodologyPage() {
 
             <article className="rounded-lg border border-zinc-200 bg-white p-8">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-900 text-sm font-semibold text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[rgb(var(--accent))] text-sm font-semibold text-white">
                   2
                 </div>
                 <div className="flex-1">
@@ -155,7 +155,7 @@ export default function DeliveryMethodologyPage() {
 
             <article className="rounded-lg border border-zinc-200 bg-white p-8">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-900 text-sm font-semibold text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[rgb(var(--accent))] text-sm font-semibold text-white">
                   3
                 </div>
                 <div className="flex-1">
@@ -186,7 +186,7 @@ export default function DeliveryMethodologyPage() {
 
             <article className="rounded-lg border border-zinc-200 bg-white p-8">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-900 text-sm font-semibold text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[rgb(var(--accent))] text-sm font-semibold text-white">
                   4
                 </div>
                 <div className="flex-1">
@@ -221,7 +221,7 @@ export default function DeliveryMethodologyPage() {
 
             <article className="rounded-lg border border-zinc-200 bg-white p-8">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-900 text-sm font-semibold text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[rgb(var(--accent))] text-sm font-semibold text-white">
                   5
                 </div>
                 <div className="flex-1">
@@ -254,7 +254,7 @@ export default function DeliveryMethodologyPage() {
 
             <article className="rounded-lg border border-zinc-200 bg-white p-8">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-900 text-sm font-semibold text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[rgb(var(--accent))] text-sm font-semibold text-white">
                   6
                 </div>
                 <div className="flex-1">
@@ -465,7 +465,7 @@ export default function DeliveryMethodologyPage() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-zinc-900 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-zinc-800"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-[rgb(var(--accent))] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[rgb(var(--accent-hover))]"
               >
                 Contact Us
               </Link>

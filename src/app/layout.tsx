@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} min-h-dvh bg-white text-zinc-900 antialiased`}
+        className={`${inter.variable} min-h-dvh bg-zinc-50 text-zinc-900 antialiased`}
       >
         {GA4_ID ? (
           <>

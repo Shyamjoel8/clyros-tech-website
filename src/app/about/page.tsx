@@ -133,7 +133,7 @@ export default function AboutPage() {
             <div className="mt-6">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-zinc-900 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-zinc-800"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-[rgb(var(--accent))] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[rgb(var(--accent-hover))]"
               >
                 Request Company Profile
               </Link>

@@ -31,7 +31,7 @@ export default function Home() {
             <div className="lg:col-span-4 lg:flex lg:justify-end">
               <a
                 href="/contact"
-                className="inline-flex h-12 w-full items-center justify-center rounded-md bg-zinc-900 px-6 text-sm font-semibold text-white hover:bg-zinc-800 lg:w-auto"
+                className="inline-flex h-12 w-full items-center justify-center rounded-md bg-[rgb(var(--accent))] px-6 text-sm font-semibold text-white hover:bg-[rgb(var(--accent-hover))] lg:w-auto"
               >
                 Schedule a Consultation
               </a>

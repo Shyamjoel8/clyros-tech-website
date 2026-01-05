@@ -4,7 +4,7 @@ import { Container } from "./Container";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-200/80 bg-white/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white">
       <Container>
         <div className="flex items-center justify-between py-5">
           {/* Brand */}
@@ -36,7 +36,7 @@ export function Header() {
           {/* CTA */}
           <Link
             href="/contact"
-            className="hidden rounded-md bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 lg:inline-flex"
+            className="hidden rounded-md bg-[rgb(var(--accent))] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[rgb(var(--accent-hover))] lg:inline-flex"
           >
             Engage with Us
           </Link>
@@ -45,7 +45,7 @@ export function Header() {
           <div className="lg:hidden">
             <Link
               href="/contact"
-              className="inline-flex rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white"
+              className="inline-flex rounded-md bg-[rgb(var(--accent))] px-4 py-2 text-sm font-medium text-white"
             >
               Contact
             </Link>
