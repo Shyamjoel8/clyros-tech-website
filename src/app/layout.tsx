@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTopButton } from "@/components/layout/ScrollToTopButton";
 import { site } from "@/lib/site";
 import Script from "next/script";
 
@@ -70,6 +71,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+        <ScrollToTopButton />
       </body>
     </html>
   );
