@@ -1,6 +1,7 @@
 export const site = {
   name: "Clyros Tech Private Limited",
   shortName: "Clyros Tech",
+  tagline: "Engineering Excellence. Delivered with Precision.",
 };
 
 export type NavItem = {
@@ -8,26 +9,47 @@ export type NavItem = {
   href: string;
 };
 
+// Primary header navigation (maximum 6 items for enterprise clarity)
 export const primaryNav: NavItem[] = [
-  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
-  { label: "Capabilities", href: "/capabilities" },
-  { label: "Case Studies", href: "/case-studies" },
-  { label: "Partners", href: "/partners" },
-  { label: "Delivery Methodology", href: "/delivery-methodology" },
-  { label: "Enterprise", href: "/enterprise" },
+  { label: "Delivery", href: "/delivery-methodology" },
+  { label: "Insights", href: "/insights" },
   { label: "Careers", href: "/careers" },
-  { label: "Contact", href: "/contact" },
 ];
 
-export const legalNav: NavItem[] = [
-  { label: "Insights", href: "/insights" },
-  { label: "Global Delivery", href: "/global-delivery" },
-  { label: "Data Privacy", href: "/data-privacy" },
-  { label: "How We Operate", href: "/how-we-operate" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms", href: "/terms" },
-];
+// Footer navigation organized by category
+export const footerNav = {
+  company: [
+    { label: "About", href: "/about" },
+    { label: "How We Operate", href: "/how-we-operate" },
+    { label: "Leadership", href: "/leadership" },
+    { label: "Careers", href: "/careers" },
+    { label: "Contact", href: "/contact" },
+  ],
+  services: [
+    { label: "Services Overview", href: "/services" },
+    { label: "Capabilities", href: "/capabilities" },
+    { label: "Delivery Methodology", href: "/delivery-methodology" },
+    { label: "Case Studies", href: "/case-studies" },
+  ],
+  industries: [
+    { label: "Industries Overview", href: "/industries" },
+    { label: "Healthcare", href: "/industries#healthcare" },
+    { label: "Financial Services", href: "/industries#financial" },
+    { label: "Manufacturing", href: "/industries#manufacturing" },
+  ],
+  resources: [
+    { label: "Insights", href: "/insights" },
+    { label: "Enterprise Readiness", href: "/enterprise" },
+    { label: "Global Delivery", href: "/global-delivery" },
+    { label: "Partners", href: "/partners" },
+  ],
+  legal: [
+    { label: "Data Privacy", href: "/data-privacy" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Use", href: "/terms" },
+  ],
+};
 
