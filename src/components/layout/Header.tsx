@@ -13,9 +13,6 @@ export function Header() {
               {site.shortName}
             </span>
             <span className="text-xs text-zinc-500">{site.tagline}</span>
-            <span className="mt-1 hidden text-xs font-medium text-zinc-600 group-hover:text-[rgb(var(--accent))] lg:inline">
-              Home
-            </span>
           </Link>
 
           {/* Primary Navigation */}
