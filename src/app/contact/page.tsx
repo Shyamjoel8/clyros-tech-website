@@ -15,10 +15,14 @@ export const metadata: Metadata = {
 export default function ContactPage({
   searchParams,
 }: {
-  searchParams?: { sent?: string | string[] };
+  searchParams?: { success?: string | string[]; error?: string | string[] };
 }) {
-  const sent = Array.isArray(searchParams?.sent) ? searchParams?.sent[0] : searchParams?.sent;
-  const showSent = sent === "1";
+  const success = Array.isArray(searchParams?.success)
+    ? searchParams?.success[0]
+    : searchParams?.success;
+  const error = Array.isArray(searchParams?.error) ? searchParams?.error[0] : searchParams?.error;
+  const showSuccess = success === "true";
+  const showError = error === "true";
 
   return (
     <div className="space-y-10 py-14 lg:py-20">
@@ -36,11 +40,22 @@ export default function ContactPage({
 
       <section aria-label="Contact form" className="border-t border-zinc-200/70 pt-10 lg:pt-14">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          {showSent ? (
-            <div className="mb-8 rounded-lg border border-zinc-200 bg-zinc-50 p-6">
-              <p className="text-sm leading-6 text-zinc-700">Your message has been sent.</p>
+          {showSuccess && (
+            <div className="mb-8 rounded-lg border border-green-300 bg-green-50 p-6">
+              <p className="text-sm font-medium leading-6 text-green-900">
+                Thank you for your inquiry. We&apos;ve received your message and will respond within
+                1-2 business days (IST).
+              </p>
             </div>
-          ) : null}
+          )}
+          {showError && (
+            <div className="mb-8 rounded-lg border border-red-300 bg-red-50 p-6">
+              <p className="text-sm font-medium leading-6 text-red-900">
+                There was an error submitting your inquiry. Please try again or contact us directly
+                at info@clyrostech.com.
+              </p>
+            </div>
+          )}
 
           <form action={submitLead} className="max-w-2xl space-y-6">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">

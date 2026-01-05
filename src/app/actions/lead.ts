@@ -20,7 +20,7 @@ function isEmail(value: string): boolean {
 export async function submitLead(formData: FormData) {
   // Honeypot check (bots)
   const honeypot = safeText(formData.get("website"));
-  if (honeypot) redirect("/contact?sent=1");
+  if (honeypot) redirect("/contact?success=true");
 
   const name = safeText(formData.get("name"));
   const company = safeText(formData.get("company"));
@@ -30,10 +30,10 @@ export async function submitLead(formData: FormData) {
   const message = safeText(formData.get("message"));
 
   if (!name || !company || !email || !geography || !inquiry || !message) {
-    redirect("/contact");
+    redirect("/contact?error=true");
   }
   if (!isEmail(email)) {
-    redirect("/contact");
+    redirect("/contact?error=true");
   }
 
   const smtpHost = requiredEnv("SMTP_HOST");
@@ -70,14 +70,18 @@ export async function submitLead(formData: FormData) {
     "This message was submitted via the website contact form.",
   ].join("\n");
 
-  await transporter.sendMail({
-    from,
-    to,
-    replyTo: email,
-    subject,
-    text,
-  });
-
-  redirect("/contact?sent=1");
+  try {
+    await transporter.sendMail({
+      from,
+      to,
+      replyTo: email,
+      subject,
+      text,
+    });
+    redirect("/contact?success=true");
+  } catch (error) {
+    console.error("Error sending contact form email:", error);
+    redirect("/contact?error=true");
+  }
 }
 
