@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
@@ -115,6 +116,28 @@ export default function AboutPage() {
               This isn&apos;t a lifestyle consulting firm. We&apos;re engineers who respect the craft and the
               responsibility that comes with building systems people depend on.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="company-profile" className="border-t border-zinc-200/70 pt-14 lg:pt-20">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl border border-zinc-200 bg-white p-8 lg:p-12">
+            <h2 id="company-profile" className="text-2xl font-semibold tracking-tight text-zinc-900 lg:text-3xl">
+              Company Profile
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-600">
+              For a comprehensive overview of Clyros Tech&apos;s capabilities, experience, and approach,
+              download our company profile.
+            </p>
+            <div className="mt-6">
+              <Link
+                href="/downloads/Clyros_Tech_Company_Profile.pdf"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-zinc-900 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-zinc-800"
+              >
+                Download Company Profile (PDF)
+              </Link>
+            </div>
           </div>
         </div>
       </section>

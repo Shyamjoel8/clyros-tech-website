@@ -13,6 +13,8 @@ export const primaryNav: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
+  { label: "Capabilities", href: "/capabilities" },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "Delivery Methodology", href: "/delivery-methodology" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },

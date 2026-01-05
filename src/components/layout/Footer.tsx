@@ -17,7 +17,13 @@ export function Footer() {
             </p>
           </div>
 
-          <nav aria-label="Footer legal" className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <nav aria-label="Footer navigation" className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <Link
+              href="/downloads/Clyros_Tech_Company_Profile.pdf"
+              className="text-sm font-medium text-zinc-700 hover:text-zinc-900"
+            >
+              Company Profile (PDF)
+            </Link>
             {legalNav.map((item) => (
               <Link
                 key={item.href}
