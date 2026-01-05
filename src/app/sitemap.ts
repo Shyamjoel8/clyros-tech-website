@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/partners/contact`, lastModified: new Date() },
     { url: `${baseUrl}/delivery-methodology`, lastModified: new Date() },
     { url: `${baseUrl}/careers`, lastModified: new Date() },
+    { url: `${baseUrl}/engineering-culture`, lastModified: new Date() },
+    { url: `${baseUrl}/leadership`, lastModified: new Date() },
     { url: `${baseUrl}/contact`, lastModified: new Date() },
     { url: `${baseUrl}/privacy-policy`, lastModified: new Date() },
     { url: `${baseUrl}/terms`, lastModified: new Date() },
