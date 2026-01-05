@@ -41,14 +41,6 @@ export function Header() {
             ))}
           </nav>
 
-          {/* CTA */}
-          <Link
-            href="/contact"
-            className="hidden rounded-md bg-[rgb(var(--accent))] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[rgb(var(--accent-hover))] md:inline-flex"
-          >
-            Engage with Us
-          </Link>
-
           {/* Mobile Menu (phone only) */}
           <div className="flex items-center md:hidden">
             <button

@@ -26,8 +26,8 @@ export function ScrollToTopButton() {
       onClick={scrollToTop}
       className={[
         "fixed bottom-6 right-6 z-50 inline-flex h-11 w-11 items-center justify-center rounded-full",
-        "border border-zinc-200 bg-white text-zinc-900 shadow-sm",
-        "hover:border-zinc-300 hover:bg-zinc-50",
+        "border border-transparent bg-[rgb(var(--accent))] text-white shadow-sm",
+        "hover:bg-[rgb(var(--accent-hover))]",
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[rgb(var(--accent))]",
         visible ? "opacity-100" : "pointer-events-none opacity-0",
       ].join(" ")}
