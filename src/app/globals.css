@@ -5,7 +5,7 @@
 @layer base {
   :root {
     /* Enterprise surfaces */
-    --surface-page: 244 245 247; /* ~ #F4F5F7 (soft neutral) */
+    --surface-page: 247 248 250; /* ~ #F7F8FA (soft neutral) */
     --surface-card: 255 255 255;
     --surface-ink: 24 24 27; /* zinc-900 */
     --surface-muted: 82 82 91; /* zinc-600 */
@@ -59,6 +59,18 @@
   }
   main a:hover {
     color: rgb(var(--accent-hover));
+  }
+
+  /* Card/surface strategy: make white cards pop on neutral page */
+  main {
+    background-color: rgb(var(--surface-page));
+  }
+  main .bg-white.border {
+    border-color: rgb(var(--surface-border));
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
+  }
+  main .bg-white.border:hover {
+    box-shadow: 0 2px 6px rgba(16, 24, 40, 0.08);
   }
 
   *:focus-visible {
