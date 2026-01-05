@@ -9,13 +9,14 @@ export type NavItem = {
   href: string;
 };
 
-// Primary header navigation (maximum 6 items for enterprise clarity)
+// Primary header navigation
 export const primaryNav: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
   { label: "Delivery", href: "/delivery-methodology" },
+  { label: "Insights", href: "/insights" },
   { label: "Careers", href: "/careers" },
 ];
 
