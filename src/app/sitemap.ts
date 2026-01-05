@@ -20,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/insights/engineering-rigor`, lastModified: new Date() },
     { url: `${baseUrl}/insights/ai-regulated-environments`, lastModified: new Date() },
     { url: `${baseUrl}/insights/cloud-governance`, lastModified: new Date() },
+    { url: `${baseUrl}/global-delivery`, lastModified: new Date() },
+    { url: `${baseUrl}/data-privacy`, lastModified: new Date() },
     { url: `${baseUrl}/contact`, lastModified: new Date() },
     { url: `${baseUrl}/privacy-policy`, lastModified: new Date() },
     { url: `${baseUrl}/terms`, lastModified: new Date() },

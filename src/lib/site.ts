@@ -23,6 +23,8 @@ export const primaryNav: NavItem[] = [
 
 export const legalNav: NavItem[] = [
   { label: "Insights", href: "/insights" },
+  { label: "Global Delivery", href: "/global-delivery" },
+  { label: "Data Privacy", href: "/data-privacy" },
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms", href: "/terms" },
 ];
