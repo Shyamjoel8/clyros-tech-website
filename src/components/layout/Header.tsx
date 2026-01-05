@@ -7,16 +7,14 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white">
       <Container>
         <div className="flex items-center justify-between py-5">
-          {/* Brand */}
-          <Link 
-            href="/" 
-            className="flex flex-col"
-          >
+          {/* Brand (also acts as Home) */}
+          <Link href="/" aria-label="Home" className="group flex flex-col">
             <span className="text-lg font-semibold tracking-tight text-zinc-900">
               {site.shortName}
             </span>
-            <span className="text-xs text-zinc-500">
-              {site.tagline}
+            <span className="text-xs text-zinc-500">{site.tagline}</span>
+            <span className="mt-1 hidden text-xs font-medium text-zinc-600 group-hover:text-[rgb(var(--accent))] lg:inline">
+              Home
             </span>
           </Link>
 
