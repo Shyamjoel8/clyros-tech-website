@@ -55,7 +55,7 @@ export function Header() {
               href="/contact"
               className="inline-flex rounded-md bg-[rgb(var(--accent))] px-4 py-2 text-sm font-medium text-white"
             >
-              Engage
+              Engage with Us
             </Link>
             <button
               type="button"
