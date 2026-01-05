@@ -15,6 +15,7 @@ export const primaryNav: NavItem[] = [
   { label: "Industries", href: "/industries" },
   { label: "Capabilities", href: "/capabilities" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Partners", href: "/partners" },
   { label: "Delivery Methodology", href: "/delivery-methodology" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
