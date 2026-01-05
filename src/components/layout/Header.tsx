@@ -4,7 +4,7 @@ import { Container } from "./Container";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white">
+    <header className="sticky top-0 z-50 border-b border-zinc-200/90 bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(243,246,252,0.92)_100%)] shadow-sm backdrop-blur">
       <Container>
         <div className="flex items-center justify-between py-5">
           {/* Brand (also acts as Home) */}
