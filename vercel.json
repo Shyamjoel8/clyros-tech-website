@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "clyrostech.com"
+        }
+      ],
+      "destination": "https://www.clyrostech.com/:path*",
+      "permanent": true
+    }
+  ]
+}

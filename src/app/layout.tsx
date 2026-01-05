@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description:
     "Enterprise technology consulting and engineering services focused on secure, reliable, and scalable systems.",
-  metadataBase: new URL("https://clyrostech.com"),
+  metadataBase: new URL("https://www.clyrostech.com"),
   alternates: {
     canonical: "/",
   },
