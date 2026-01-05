@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/partners`, lastModified: new Date() },
     { url: `${baseUrl}/partners/contact`, lastModified: new Date() },
     { url: `${baseUrl}/delivery-methodology`, lastModified: new Date() },
+    { url: `${baseUrl}/enterprise`, lastModified: new Date() },
+    { url: `${baseUrl}/how-we-operate`, lastModified: new Date() },
     { url: `${baseUrl}/careers`, lastModified: new Date() },
     { url: `${baseUrl}/engineering-culture`, lastModified: new Date() },
     { url: `${baseUrl}/leadership`, lastModified: new Date() },
