@@ -12,7 +12,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
+const GA4_ID = "G-5TVNSW38HH";
 
 export const metadata: Metadata = {
   title: {
