@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AnimatedSection } from "@/components/motion/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -16,20 +17,23 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="space-y-14 py-14 lg:space-y-20 lg:py-20">
-      <header className="pb-2">
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-semibold leading-[1.12] tracking-tight text-zinc-900 lg:text-5xl">
-            Comprehensive Technology Services for Enterprise Clients
-          </h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-600 lg:text-xl">
-            Clyros Tech provides end-to-end technology services across the entire solution
-            lifecycle—from strategic planning and architecture through implementation, optimization,
-            and ongoing evolution.
-          </p>
-        </div>
-      </header>
+      <AnimatedSection>
+        <header className="pb-2">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h1 className="text-4xl lg:text-6xl">
+              Comprehensive Technology Services for Enterprise Clients
+            </h1>
+            <p className="lead mt-6 max-w-3xl">
+              Clyros Tech provides end-to-end technology services across the entire solution
+              lifecycle—from strategic planning and architecture through implementation, optimization,
+              and ongoing evolution.
+            </p>
+          </div>
+        </header>
+      </AnimatedSection>
 
-      <section aria-labelledby="service-categories" className="border-t border-zinc-200/70 pt-14 lg:pt-20">
+      <AnimatedSection>
+        <section aria-labelledby="service-categories" className="border-t border-zinc-200/70 pt-14 lg:pt-20">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2
             id="service-categories"
@@ -201,14 +205,16 @@ export default function ServicesPage() {
             </article>
           </div>
         </div>
-      </section>
+        </section>
+      </AnimatedSection>
 
-      <section aria-labelledby="engagement-models" className="border-t border-zinc-200/70 pt-14 lg:pt-20">
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-8 lg:p-12">
-            <h2 id="engagement-models" className="text-2xl font-semibold tracking-tight text-zinc-900 lg:text-3xl">
-              Flexible Structures to Match Your Needs
-            </h2>
+      <AnimatedSection>
+        <section aria-labelledby="engagement-models" className="border-t border-zinc-200/70 pt-14 lg:pt-20">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-8 lg:p-12">
+              <h2 id="engagement-models" className="text-3xl lg:text-4xl">
+                Flexible Structures to Match Your Needs
+              </h2>
             <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
               <div className="rounded-lg border border-zinc-200 bg-white p-8">
                 <h3 className="text-base font-semibold text-zinc-900">Fixed Scope Projects</h3>
@@ -236,8 +242,9 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </AnimatedSection>
     </div>
   );
 }
