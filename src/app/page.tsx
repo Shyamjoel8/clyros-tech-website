@@ -20,10 +20,10 @@ export default function Home() {
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-8">
-              <h1 className="text-4xl font-semibold leading-[1.12] tracking-tight text-zinc-900 lg:text-5xl">
+              <h1 className="text-4xl lg:text-6xl">
                 Enterprise Technology. Engineered for Scale.
               </h1>
-              <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-600 lg:text-xl">
+              <p className="lead mt-6 max-w-3xl">
                 We architect, build, and optimize mission-critical systems that power digital
                 transformation across regulated industries.
               </p>
@@ -42,14 +42,14 @@ export default function Home() {
 
       <section aria-labelledby="value-proposition" className="border-t border-zinc-200/70 pt-14 lg:pt-20">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             <h2
               id="value-proposition"
-              className="text-2xl font-semibold tracking-tight text-zinc-900 lg:text-3xl"
+              className="text-3xl lg:text-4xl"
             >
               Built for Complexity. Delivered with Precision.
             </h2>
-            <p className="mt-4 text-base leading-7 text-zinc-600">
+            <p className="lead mt-6">
               Organizations turn to Clyros Tech when standard solutions fall short. We bring deep
               domain expertise, rigorous engineering discipline, and proven delivery frameworks to
               solve the most demanding technology challenges.
@@ -57,25 +57,25 @@ export default function Home() {
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-3">
-            <article className="rounded-lg border border-zinc-200 bg-white p-8">
-              <h3 className="text-base font-semibold text-zinc-900">Enterprise Architecture</h3>
-              <p className="mt-2 text-sm leading-6 text-zinc-600">
+            <article className="rounded-lg border bg-white p-8">
+              <h3 className="text-lg font-semibold">Enterprise Architecture</h3>
+              <p className="mt-3 text-base leading-relaxed">
                 From legacy modernization to cloud-native platforms, we design systems that scale
                 with your ambition and comply with your constraints.
               </p>
             </article>
 
-            <article className="rounded-lg border border-zinc-200 bg-white p-8">
-              <h3 className="text-base font-semibold text-zinc-900">Mission-Critical Delivery</h3>
-              <p className="mt-2 text-sm leading-6 text-zinc-600">
+            <article className="rounded-lg border bg-white p-8">
+              <h3 className="text-lg font-semibold">Mission-Critical Delivery</h3>
+              <p className="mt-3 text-base leading-relaxed">
                 Our teams operate within stringent regulatory, security, and uptime
                 requirements—delivering solutions that can&apos;t afford to fail.
               </p>
             </article>
 
-            <article className="rounded-lg border border-zinc-200 bg-white p-8">
-              <h3 className="text-base font-semibold text-zinc-900">Strategic Partnership</h3>
-              <p className="mt-2 text-sm leading-6 text-zinc-600">
+            <article className="rounded-lg border bg-white p-8">
+              <h3 className="text-lg font-semibold">Strategic Partnership</h3>
+              <p className="mt-3 text-base leading-relaxed">
                 We don&apos;t just build software. We embed with your organization, transfer knowledge,
                 and ensure long-term success beyond deployment.
               </p>
@@ -86,7 +86,7 @@ export default function Home() {
 
       <section aria-labelledby="differentiators" className="border-t border-zinc-200/70 pt-14 lg:pt-20">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 id="differentiators" className="text-2xl font-semibold tracking-tight text-zinc-900 lg:text-3xl">
+          <h2 id="differentiators" className="text-3xl lg:text-4xl">
             Why Leading Enterprises Choose Clyros Tech
           </h2>
           <div className="mt-8 rounded-lg border border-zinc-200 bg-white p-8">
