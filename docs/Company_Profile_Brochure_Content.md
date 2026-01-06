@@ -237,7 +237,7 @@ India | North America | Global Delivery
 ---
 
 ### Legal Notice
-© 2025 Clyros Tech Private Limited. All rights reserved.
+© 2026 Clyros Tech Private Limited. All rights reserved.
 
 Delivery aligned with ISO-grade practices. HIPAA-aware engineering for healthcare contexts. SOC 2–aligned security and controls.
 
