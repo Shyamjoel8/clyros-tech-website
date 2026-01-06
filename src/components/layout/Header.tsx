@@ -94,15 +94,6 @@ export function Header() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-4 border-t border-zinc-200 pt-4">
-                  <Link
-                    href="/contact"
-                    onClick={() => setOpen(false)}
-                    className="inline-flex w-full items-center justify-center rounded-md bg-[rgb(var(--accent))] px-4 py-2.5 text-sm font-medium text-white hover:bg-[rgb(var(--accent-hover))]"
-                  >
-                    Engage with Us
-                  </Link>
-                </div>
               </nav>
             </Container>
           </div>
