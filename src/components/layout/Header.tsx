@@ -73,11 +73,11 @@ export function Header() {
       {open ? (
         <div className="md:hidden">
           <div
-            className="fixed inset-0 z-40 bg-black/30"
+            className="fixed inset-0 z-50 cursor-pointer bg-black/30 pointer-events-auto"
             aria-hidden="true"
             onClick={() => setOpen(false)}
           />
-          <div className="fixed left-4 right-4 top-[76px] z-50 mx-auto max-w-md rounded-xl border border-zinc-200 bg-white shadow-xl">
+          <div className="fixed left-4 right-4 top-[76px] z-[60] mx-auto max-w-md rounded-xl border border-zinc-200 bg-white shadow-xl">
             <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-3">
               <span className="text-sm font-semibold text-zinc-900">Menu</span>
               <button
