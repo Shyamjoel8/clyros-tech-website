@@ -17,15 +17,15 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-200/90 bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(243,246,252,0.92)_100%)] shadow-sm backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[rgb(var(--border-subtle))] bg-white/95 shadow-sm backdrop-blur-md">
       <Container>
         <div className="flex items-center justify-between py-5">
           {/* Brand (also acts as Home) */}
           <Link href="/" aria-label="Home" className="group flex flex-col">
-            <span className="text-lg font-semibold tracking-tight text-zinc-900">
+            <span className="text-lg font-bold tracking-tight text-[rgb(var(--text-primary))]">
               {site.shortName}
             </span>
-            <span className="text-xs text-zinc-500">{site.tagline}</span>
+            <span className="text-xs text-[rgb(var(--text-tertiary))]">{site.tagline}</span>
           </Link>
 
           {/* Primary Navigation (tablet+) */}
@@ -34,7 +34,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-zinc-700 transition-colors hover:text-zinc-900"
+                className="text-sm font-medium text-[rgb(var(--text-secondary))] transition-colors hover:text-[rgb(var(--text-primary))]"
               >
                 {item.label}
               </Link>

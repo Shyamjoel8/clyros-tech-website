@@ -4,7 +4,7 @@ import { Container } from "./Container";
 
 export function Footer() {
   return (
-    <footer className="border-t border-zinc-900/10 bg-zinc-950">
+    <footer className="border-t border-slate-800/50 bg-[rgb(var(--surface-footer))]">
       <Container>
         {/* Main Footer Content */}
         <div className="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-5 lg:gap-8">
